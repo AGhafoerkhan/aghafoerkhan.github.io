@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var overlayButton = document.querySelector(".overlay-button");
-  var overlay = document.querySelector(".overlay");
-  var overlayContent = document.querySelector(".overlay-content");
-  var isOpen = false;
+  const overlayButton = document.querySelector(".overlay-button");
+  const overlay = document.querySelector(".overlay");
+  const overlayContent = document.querySelector(".overlay-content");
+  let isOpen = false;
 
   overlayButton.addEventListener("click", function () {
     isOpen = !isOpen;
