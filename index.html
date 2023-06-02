@@ -10,77 +10,48 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
   </head>
-  <body class="bg-black bg-gradient">
-    <div class="container-fluid nav-height rounded-3 mt-2">
+  <body>
+    <!-- <button class="btn btn-primary overlay-button">Show Overlay</button> -->
+
+    <div class="overlay">
+      <div class="overlay-content fs-1 ">
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+
+     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-5 bg-success">
-          <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container-fluid ">
-              <a class="navbar-brand" href="#"
-                ><img
-                  src="/img/Screenshot 2023-04-16 125821.png"
-                  class="rounded-1 img-size"
-                  alt="image"
-              /></a>
-              <button
-                class="navbar-toggler d-lg-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
+        <div class="col-1"></div>
+        <div class="col-9">
+          <a
+            href="#"
+            class="text-decoration-none text-white fs-1 icon-container"
+            ><span class="bi bi-circle"></span> <span class="letter">A</span></a
+          >
         </div>
-        <div class="col-sm-7 bg-success">
-          <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container">
-              <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active mt-2 fs-5" href="#" aria-current="page"
-                      >Home <span class="visually-hidden">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mt-2 fs-5" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mt-2 fs-5" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mt-2 fs-5" href="#">About</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <div class="col-2"><button class="btn btn-unstyled overlay-button text-decoration-none text-light fs-1 plus">+</button>
         </div>
       </div>
     </div>
-    
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          
-        </div>
-        <div class="col-sm-6">
-          
-        </div>
-      </div>
-    </div>
+
+    <div>
+      <img src="/img/waterfall.jpg"/>
+
+    </div> 
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
