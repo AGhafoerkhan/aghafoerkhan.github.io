@@ -23,7 +23,7 @@ body {
   position: fixed;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
-  padding: 20px;
+  padding: 500px;
   z-index: 9999;
   display: none; /* Initially hidden */
   /* animation: fadeOverlay 1s forwards; Animation for opacity change */
@@ -66,7 +66,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+.animated-text {
+  transition: transform 0.3s ease;
 
+}
+
+.animated-text:hover {
+  transform: translateX(20px);
+  color: var();
+}
 .overlay-content a {
   color: #fff;
   text-decoration: none;
@@ -89,5 +97,5 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-}
+}    
 
