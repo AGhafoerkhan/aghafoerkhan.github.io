@@ -20,3 +20,18 @@ overlayButton.addEventListener("click", function () {
     body.style.overflow = "auto";
   }
 });
+
+
+// document.querySelector('.scroll-link').addEventListener('click', function(event) {
+//   event.preventDefault();
+//   scrollToHeight(500);
+// });
+
+// function scrollToHeight(height) {
+//   overlayContent.style.display = "none";
+//   overlay.classList.remove("fade-in");
+//   window.scrollTo({
+//     top: height,
+//     behavior: 'smooth'
+//   });
+// }
