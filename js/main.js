@@ -2,10 +2,21 @@ const overlayButton = document.querySelector(".overlay-button");
 const overlay = document.querySelector(".overlay");
 const overlayContent = document.querySelector(".overlay-content");
 const body = document.querySelector("body");
+const fadeAnimtion = document.querySelectorAll(".animated-text");
+
 
 let isOpen = false;
 
 overlayButton.addEventListener("click", function () {
+ fadeInOut();
+});
+
+fadeAnimtion.forEach(button => {
+  button.addEventListener("click", fadeInOut);
+});
+
+
+function fadeInOut() {
   isOpen = !isOpen;
   if (isOpen) {
     overlay.style.display = "block";
@@ -19,19 +30,8 @@ overlayButton.addEventListener("click", function () {
     overlay.classList.remove("fade-in");
     body.style.overflow = "auto";
   }
-});
+};
 
 
-// document.querySelector('.scroll-link').addEventListener('click', function(event) {
-//   event.preventDefault();
-//   scrollToHeight(500);
-// });
 
-// function scrollToHeight(height) {
-//   overlayContent.style.display = "none";
-//   overlay.classList.remove("fade-in");
-//   window.scrollTo({
-//     top: height,
-//     behavior: 'smooth'
-//   });
-// }
+
