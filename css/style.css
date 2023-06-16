@@ -105,8 +105,12 @@
 }
 body{
   background-color: #0b0b0b;
-  
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none;
 }
+
 .icon-container {
   position: relative;
   display: inline-block;
@@ -214,3 +218,75 @@ body{
   color: white;
   z-index: 1;
 }
+
+.img-size{
+  width: 50vw;
+  height: 30vh;
+}
+
+.img-size-card{
+  width: 60vw;
+  height: 25vh;
+}
+
+.my-card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.my-card:hover {
+  transform: scale(1.05);
+}
+
+.my-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.my-body {
+  padding: 20px;
+}
+
+.my-skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-skill-name {
+  width: 120px;
+  font-size: 16px;
+}
+
+.my-skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.my-skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.my-skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+$_number_of_text: 8;
+$_number_of_particle: 12;
+$_mult_num_text: 360 / $_number_of_text;
+$_mult_num_particle: 360 / $_number_of_particle;
+$_width: 40;
+$_height: 40;
