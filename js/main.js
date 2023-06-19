@@ -47,49 +47,13 @@ function updateLastUpdatedMessage() {
 
 updateLastUpdatedMessage();
 
-var texts = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ': )'];
-var number_of_particle = 12;
 
-for (var i = 0; i < texts.length; i++) {
-  var backgroundClass = "background" + i;
-  // Create background element with the specified class
-  var backgroundElement = document.createElement('div');
-  backgroundElement.classList.add(backgroundClass);
-  document.body.appendChild(backgroundElement);
-
-  // Create criterion element
-  var criterionElement = document.createElement('div');
-  criterionElement.classList.add('criterion');
-
-  // Create text elements
-  for (var j = 0; j < texts.length; j++) {
-    var textClass = 'text' + j;
-    var textElement = document.createElement('div');
-    textElement.classList.add(textClass);
-    textElement.innerText = texts[j];
-    criterionElement.appendChild(textElement);
-  }
-
-  // Create frame elements
-  for (var k = 0; k < texts.length; k++) {
-    var frameClass = 'frame' + k;
-    var frameElement = document.createElement('div');
-    frameElement.classList.add(frameClass);
-    criterionElement.appendChild(frameElement);
-  }
-
-  // Create particle elements
-  for (var l = 0; l < texts.length; l++) {
-    for (var m = 0; m < number_of_particle; m++) {
-      var particleClass = "particle" + l + m;
-      var particleElement = document.createElement('div');
-      particleElement.classList.add(particleClass);
-      criterionElement.appendChild(particleElement);
-    }
-  }
-
-  document.body.appendChild(criterionElement);
-}
+overlay.addEventListener('click', function() {
+  overlayContent.style.display = "none"; 
+  overlay.classList.add("fade-out");
+  overlay.classList.remove("fade-in");
+  body.style.overflow = "auto";
+});
 
 
 
