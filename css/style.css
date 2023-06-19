@@ -213,8 +213,6 @@ body{
 
 .text-stack{
   position: absolute;
-  font-size: 18px;
-  font-weight: bold;
   color: white;
   z-index: 1;
 }
@@ -229,7 +227,7 @@ body{
   height: 25vh;
 }
 
-.my-card {
+/* .my-card {
   width: 300px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -282,11 +280,6 @@ body{
 .my-skill-percent-number {
   margin-left: 20px;
   font-size: 16px;
-}
+} */
 
-$_number_of_text: 8;
-$_number_of_particle: 12;
-$_mult_num_text: 360 / $_number_of_text;
-$_mult_num_particle: 360 / $_number_of_particle;
-$_width: 40;
-$_height: 40;
+
