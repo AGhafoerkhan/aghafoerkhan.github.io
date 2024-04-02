@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-red: #ff0000;
@@ -106,9 +106,9 @@
 
 body{
   background-color: #0b0b0b;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer */
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
   user-select: none;
 }
 
@@ -142,34 +142,34 @@ body{
 
 
 .overlay.fade-in {
-  animation-name: fadeInOverlay; /* Fade-in animation */
-  animation-duration: 1s; /* Animation duration */
-  animation-fill-mode: forwards; /* Retain the final state of the animation */
+  animation-name: fadeInOverlay; 
+  animation-duration: 1s; 
+  animation-fill-mode: forwards; 
 }
 
 .overlay.fade-out {
-  animation-name: fadeOutOverlay; /* Fade-out animation */
-  animation-duration: 2s; /* Animation duration */
-  animation-fill-mode: forwards; /* Retain the final state of the animation */
+  animation-name: fadeOutOverlay;
+  animation-duration: 2s; 
+  animation-fill-mode: forwards; 
 }
 
 @keyframes fadeInOverlay {
   from {
-    display: block; /* Show the overlay */
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    display: block; 
+    background-color: rgba(0, 0, 0, 0);
   }
   to {
-    background-color: rgba(0, 0, 0, 1); /* Faded background */
+    background-color: rgba(0, 0, 0, 1);
   }
 }
 
 @keyframes fadeOutOverlay {
   from {
-    background-color: rgba(0, 0, 0, 1); /* Faded background */
+    background-color: rgba(0, 0, 0, 1);
   }
   to {
-    display: none; /* Hide the overlay */
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    display: none; 
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 .overlay-content {
@@ -190,7 +190,7 @@ body{
 }
 
 .overlay.show {
-  display: block; /* Show overlay when 'show' class is added */
+  display: block; 
 }
 
 .plus {
@@ -287,5 +287,69 @@ body{
 .text-responsive{
   font-size: 1.7vw;
 }
+
+ */
+
+ body {
+  background-color: skyblue;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0; /* Adjust the width as needed */
+}
+
+/* Customize scrollbar for the col-6 */
+.custom-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+
+}
+
+/* Firefox scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+
+
+/*nav*/
+.nav-color {
+  background-color: #001F3F;
+}
+
+.nav-text-color {
+  color: #FFFFFF;
+}
+
+/*about me*/
+
+.custom-button{
+  background-color: #000000;
+}
+
+.info-button{
+  background: rgba(217, 217, 217, 1);
+  border: 1px solid rgba(200, 200, 200, 1) ;
+}
+
+.blog-button{
+  background-color: #000000;
+  width: 170px;
+  height:50px;
+}
+
+
 
 
