@@ -19,11 +19,59 @@
   src: url(../assets/fonts/Roboto-Light.ttf);
 }
 
-body{
+body {
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
 }
 
+/* Styles for dark mode */
+.dark-mode {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+.theme-checkbox {
+  --toggle-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 3.125em;
+  height: 1.5625em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  transition: 0.4s;
+  border-radius: 99em;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+}
+
+.theme-checkbox::after{
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(75%, #efefef), color-stop(75%, #2a2a2a)) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 3.125rem;
+  background-position: 100%;
+  border-radius: 50%;
+}
+
+.theme-checkbox:checked::after {
+  left: calc(100% - 0.8em - 0.438em);
+  background-position: 0;
+}
+
+.theme-checkbox:checked {
+  background-position: 100%;
+}
 @media (min-width: 1400px) {
   .container{
     width:1370px;
