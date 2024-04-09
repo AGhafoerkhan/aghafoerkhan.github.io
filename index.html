@@ -73,7 +73,13 @@
           </nav>
           <div class="header__content text-center">
             <h1 class="header__content__block">Hello</h1>
-            <h1 class="header__content__title">I'm Angelo Ghafoerkhan</h1>
+
+            <h1 class="header__content__title">
+              <span class="fixed-text">I'm Angelo, </span>
+              <span id="typing-text"></span>
+              <span id="cursor"></span></h1>
+
+            
             <ul class="header__content__sub-title">
               <li>SOFTWARE DEVELOPER<span class="padding">&#45;</span></li>
               <li>WEB DEVELOPER <span class="padding">&#45;</span></li>
@@ -1236,19 +1242,16 @@
     <script src="assets/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/mixitup.js"></script>
-
+    <script src="js/qol.js"></script>
     <script>
-      // $("a").click(function (e) {
-      //   e.preventDefault();
-      // });
-
-       // Get references to the checkbox and body element
   const darkModeCheckbox = document.getElementById("darkModeSwitch");
   const body = document.body;
+  const h2Elements = document.querySelectorAll("h2");
 
   // Function to toggle dark mode styles
   const toggleDarkMode = () => {
     body.classList.toggle("dark-mode"); // Add/remove dark-mode class
+    h2Elements.forEach(h2 => h2.classList.toggle("white-text")); // Toggle h2 class
   };
 
   // Attach event listener to checkbox for toggle on change
